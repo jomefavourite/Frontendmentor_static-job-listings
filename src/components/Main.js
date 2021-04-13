@@ -12,7 +12,7 @@ function Main({
 }) {
   return (
     <main className='relative'>
-      <section className='bg-color5 bg-mainBg h-40 w-full bg-cover md:bg-mainDeskBg'></section>
+      <div className='bg-color5 bg-mainBg h-40 w-full bg-cover md:bg-mainDeskBg'></div>
 
       {btnClicked && (
         <Filter
@@ -66,11 +66,11 @@ function Main({
                   {content.position}
                 </h3>
 
-                <div className='flex text-color3 space-x-2 border-b pb-3 lg:border-0'>
+                <ul className='flex text-color3 space-x-6 border-b pb-3 lg:border-0'>
                   <li className='list-none'>{content.postedAt}</li>
-                  <li>{content.contract}</li>
-                  <li>{content.location}</li>
-                </div>
+                  <li className='list-disc'>{content.contract}</li>
+                  <li className='list-disc'>{content.location}</li>
+                </ul>
               </div>
             </div>
 
