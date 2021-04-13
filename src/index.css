@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+
+body {
+  @apply bg-color1 font-spartan text-sm;
+}
+
+.btn {
+  @apply block bg-color2 p-2 text-color5 font-semibold rounded-md;
+}
+
+.main-background {
+  /* background-image: url('./src/images/bg-header-mobile.svg'); */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  background: rgba(91, 164, 164, 0.849);
+}
+
+@tailwind utilities;
